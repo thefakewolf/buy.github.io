@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">   
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Checkout</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+    <div class="container">
+        <h1>結帳</h1>
+    
+
+        <!-- 订单摘要 -->
+        <div class="order-summary" id="orderSummary">
+            <!-- 这里将通过 JavaScript 动态生成订单摘要 -->
+        </div>
+    
+                <!-- 配送信息 -->
+                <div class="shipping-info">
+                    <h2>配送信息</h2>
+                    <input type="text" id="name" placeholder="收件人姓名">
+                    <input type="text" id="address" placeholder="收件地址">
+                    <input type="text" id="phone" placeholder="联系电话">
+                </div>
+        
+                <!-- 支付信息 -->
+                <div class="payment-info">
+                    <h2>支付信息</h2>
+                    <input type="text" id="cardNumber" placeholder="信用卡号">
+                    <input type="text" id="expiryDate" placeholder="到期日期">
+                    <input type="text" id="cvv" placeholder="CVV">
+                </div>
+            
+        <hr/>
+        <p>Total: <span id="total">0</span></p>
+    
+        <!-- 返回首页和结账按钮 -->
+        <div class="button-container">
+            <button class="home" onclick="location.href='index.html';">返回首頁</button>
+            <button class="checkout" onclick="placeOrder();">下訂單</button>
+        </div>
+    </div>
+    <script src="checkout.js"></script>
+</body>
+</html>

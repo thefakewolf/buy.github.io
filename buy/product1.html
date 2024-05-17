@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+    <script src="cart.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>Shopping Website</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Welcome to My Shopping Website</h1>
+      <input type="text" class="search-input" placeholder="搜索商品...">
+      <button class="search">搜尋</button>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Sort</a>
+          <ul class="dropdown">
+            <li><a href="#">Category 1</a></li>
+            <li><a href="#">Category 2</a></li>
+            <li><a href="#">Category 3</a></li>
+            <!-- Add more categories as needed -->
+          </ul>
+        </li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+      </ul>
+    </nav>
+
+    <div id="back-to-top" onclick="scrollToTop()">↑</div>
+    
+    <div class="background">
+      <div class="container" id="product-container">
+        <!-- Products will be dynamically inserted here -->
+      </div>
+      <footer>
+          <p>&copy; 2024 My Shopping Website. All Rights Reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>
